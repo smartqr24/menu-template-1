@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Burger Box Menu</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #fff;
+      margin: 0;
+      padding: 16px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    h1 { text-align: center; margin-bottom: 4px; }
+    .info { text-align: center; color: #666; font-size: 14px; margin-bottom: 24px; }
+
+    h2 { border-bottom: 1px solid #ddd; padding-bottom: 6px; margin-top: 32px; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-body {
+      padding: 10px;
+    }
+
+    .card-body b { font-size: 14px; }
+    .card-body p { font-size: 12px; color: #666; margin: 4px 0; }
+    .card-body .price { font-weight: 700; color: #111; font-size: 14px; }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 12px;
+      color: #aaa;
+      border-top: 1px solid #eee;
+      padding-top: 16px;
+    }
+    footer a { color: #d94f3d; }
+  </style>
+</head>
+<body>
+
+  <h1>🍔 Burger Box</h1>
+  <p class="info">12 Market Lane &nbsp;|&nbsp; +1 555 0182 &nbsp;|&nbsp; Open 11am–10pm</p>
+
+  <h2>Burgers</h2>
+  <div class="cards">
+
+    <div class="card">
+      <img src="assets/burger.png" alt="Classic Smash" />
+      <div class="card-body">
+        <b>Classic Smash</b>
+        <p>Double patty, cheese, pickles, house sauce</p>
+        <span class="price">$12</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/burger.png" alt="BBQ Bacon Stack" />
+      <div class="card-body">
+        <b>BBQ Bacon Stack</b>
+        <p>Beef patty, bacon, cheddar, BBQ glaze</p>
+        <span class="price">$15</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/burger.png" alt="Spicy Jalapeño" />
+      <div class="card-body">
+        <b>Spicy Jalapeño</b>
+        <p>Beef patty, pepper jack, jalapeño, sriracha mayo</p>
+        <span class="price">$14</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/burger.png" alt="Crispy Mushroom" />
+      <div class="card-body">
+        <b>Crispy Mushroom</b>
+        <p>Portobello, Swiss cheese, avocado aioli</p>
+        <span class="price">$13</span>
+      </div>
+    </div>
+
+  </div>
+
+  <h2>Set Meals</h2>
+  <div class="cards">
+
+    <div class="card">
+      <img src="assets/burger.png" alt="Classic Set" />
+      <div class="card-body">
+        <b>Classic Set</b>
+        <p>Classic Smash + Fries + Drink</p>
+        <span class="price">$18</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/burger.png" alt="BBQ Bacon Set" />
+      <div class="card-body">
+        <b>BBQ Bacon Set</b>
+        <p>BBQ Bacon Stack + Large Fries + Drink</p>
+        <span class="price">$21</span>
+      </div>
+    </div>
+
+  </div>
+
+  <h2>Sides</h2>
+  <div class="cards">
+
+    <div class="card">
+      <div class="card-body">
+        <b>🍟 Classic Fries</b>
+        <p>Regular / Large</p>
+        <span class="price">$4 / $6</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <b>🧅 Onion Rings</b>
+        <p>Beer-battered, chipotle dip</p>
+        <span class="price">$6</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <b>🥗 Side Slaw</b>
+        <p>Cabbage, carrot, apple</p>
+        <span class="price">$4</span>
+      </div>
+    </div>
+
+  </div>
+
+  <h2>Drinks</h2>
+  <div class="cards">
+
+    <div class="card">
+      <div class="card-body">
+        <b>🥤 Soft Drink</b>
+        <p>Cola, lemonade, orange, ginger beer</p>
+        <span class="price">$3 / $4</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <b>🍺 Craft Beer</b>
+        <p>Ask for today's tap</p>
+        <span class="price">$8</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <b>🧃 Fresh Juice</b>
+        <p>Orange, watermelon, mango</p>
+        <span class="price">$5</span>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>Please inform staff of any allergies. Prices include tax.</p>
+    <p>Menu page created with <a href="https://www.qr24.com">qr24.com</a></p>
+  </footer>
+
+</body>
+</html>
